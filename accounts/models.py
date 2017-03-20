@@ -11,3 +11,6 @@ class Account(models.Model):
 	class Meta:
 		verbose_name = 'Conta'
 		verbose_name_plural = 'Contas'
+
+	def __str__(self):
+		return "{}".format(self.user)
